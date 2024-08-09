@@ -1,0 +1,17 @@
+{
+  "name": "reja",
+  "version": "1.0.0",
+  "description": "Mern vs javacript crud birinchi loyiha",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "train": "nodemon train.js"
+  },
+  "author": "Yusufjon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
