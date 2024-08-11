@@ -11,15 +11,16 @@ app.use(express.urlencoded({ extended: true }));
 
 // 3: Views code
 app.set("views", "views");
-app.set("views engine", "esj");
+app.set("view engine", "ejs");
 
 // 4: Routing code
 app.get("/", function (req, res) {
-  res.end(`<h1>Server run!</h1>`);
+  res.render("harid");
 });
 
-app.get("/gift", function (req, res) {
-  res.send(`<h1 style="color: white; background: green">Gift packajec!</h1>`);
+app.post("/json", (req, res) => {
+  console.log(req.body);
+  res.json({ Response: "success" });
 });
 
 const server = http.createServer(app);
