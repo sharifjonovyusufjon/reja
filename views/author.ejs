@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="container">
+        <div class="navbar_frame">
+          <div class="nav_top">
+            <div class="conteiner">
+              <div class="profil">
+                <img
+                  src="images/Profile.svg"
+                  alt=""
+                  width="156px"
+                  height="135px"
+                />
+                <strong><%=user.name%></strong>
+                <span><%=user.profession%></span>
+                <div class="medium">
+                  <a href="">
+                    <div class="divs">
+                      <div>
+                        <i
+                          class="fa-brands fa-facebook-f"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="divs">
+                      <div>
+                        <i
+                          class="fa-brands fa-instagram"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="divs">
+                      <div>
+                        <i
+                          class="fa-brands fa-youtube"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="divs">
+                      <div>
+                        <i
+                          class="fa-brands fa-twitter"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="divs">
+                      <div>
+                        <i
+                          class="fa-brands fa-linkedin"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="margin"></div>
+              <div class="procase">
+                <div class="probox">
+                  <strong>Age:</strong>
+                  <span><%=user.age%></span>
+                </div>
+                <div class="probox">
+                  <strong>Residence:</strong>
+                  <span><%=user.residence%></span>
+                </div>
+                <div class="probox">
+                  <strong>Freelance:</strong>
+                  <span style="color: rgb(126, 185, 66)">Avaiable</span>
+                </div>
+                <div class="probox">
+                  <strong>Address:</strong>
+                  <span><%=user.address%></span>
+                </div>
+              </div>
+              <div class="margin"></div>
+              <div class="lang">
+                <div class="str">
+                  <strong>Languages</strong>
+                </div>
+                <div class="ftz">
+                  <div class="ftzbox">
+                    <div class="ftztxt">
+                      <span><%=user.language[0]%></span>
+                      <span>100%</span>
+                    </div>
+                    <div class="ftzft">
+                      <div></div>
+                    </div>
+                  </div>
+                  <div class="ftzbox">
+                    <div class="ftztxt">
+                      <span><%=user.language[1]%></span>
+                      <span>80%</span>
+                    </div>
+                    <div class="ftzft">
+                      <div style="width: 208px"></div>
+                    </div>
+                  </div>
+                  <div class="ftzbox">
+                    <div class="ftztxt">
+                      <span><%=user.language[2]%></span>
+                      <span>60%</span>
+                    </div>
+                    <div class="ftzft">
+                      <div style="width: 190px"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin"></div>
+              <div class="lang">
+                <div class="str">
+                  <strong>Skills</strong>
+                </div>
+                <div class="ftz">
+                  <div class="ftzbox">
+                    <div class="ftztxt">
+                      <span><%=user.skills[0]%></span>
+                      <span>90%</span>
+                    </div>
+                    <div class="ftzft">
+                      <div style="width: 209px"></div>
+                    </div>
+                  </div>
+                  <div class="ftzbox">
+                    <div class="ftztxt">
+                      <span><%=user.skills[1]%></span>
+                      <span>85%</span>
+                    </div>
+                    <div class="ftzft">
+                      <div style="width: 207px"></div>
+                    </div>
+                  </div>
+                  <div class="ftzbox">
+                    <div class="ftztxt">
+                      <span><%=user.skills[2]%></span>
+                      <span>80%</span>
+                    </div>
+                    <div class="ftzft">
+                      <div style="width: 201px"></div>
+                    </div>
+                  </div>
+                  <div class="ftzbox">
+                    <div class="ftztxt">
+                      <span><%=user.skills[3]%></span>
+                      <span>75%</span>
+                    </div>
+                    <div class="ftzft">
+                      <div style="width: 187px"></div>
+                    </div>
+                  </div>
+                  <div class="ftzbox">
+                    <div class="ftztxt">
+                      <span><%=user.skills[4]%></span>
+                      <span>85%</span>
+                    </div>
+                    <div class="ftzft">
+                      <div style="width: 207px"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin"></div>
+              <div class="lang">
+                <div class="str">
+                  <strong>Extra Skills</strong>
+                </div>
+                <div class="extra">
+                  <div class="extrabox">
+                    <div class="extraboxes">
+                      <img
+                        src="images/icon.svg"
+                        alt=""
+                        width="15px"
+                        height="15px"
+                      />
+                      <span><%=user.extra_skills[0]%></span>
+                    </div>
+                    <div class="extraboxes">
+                      <img
+                        src="images/icon.svg"
+                        alt=""
+                        width="15px"
+                        height="15px"
+                      />
+                      <span><%=user.extra_skills[1]%></span>
+                    </div>
+                    <div class="extraboxes">
+                      <img
+                        src="images/icon.svg"
+                        alt=""
+                        width="15px"
+                        height="15px"
+                      />
+                      <span><%=user.extra_skills[2]%></span>
+                    </div>
+                    <div class="extraboxes">
+                      <img
+                        src="images/icon.svg"
+                        alt=""
+                        width="15px"
+                        height="15px"
+                      />
+                      <span><%=user.extra_skills[3]%></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin"></div>
+            </div>
+          </div>
+          <div class="nav_count">
+            <div class="count_top">
+              <div class="count_txt">
+                <strong><%=user.work_place%></strong>
+                <span><%=user.service_desc%></span>
+                <a href=""><span class="asp">HIRE ME -></span></a>
+              </div>
+              <img src="images/your.svg" alt="" width="326px" height="446px" />
+            </div>
+            <div class="count_bot">
+              <strong>my services</strong>
+              <span
+                >Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. lorem
+                ipsum</span
+              >
+              <div class="wrap_box">
+                <div class="wrap_boxes">
+                  <img src="images/web.svg" alt="" width="68px" height="68px" />
+                  <strong>web development</strong>
+                  <span>blog, e-commerce</span>
+                </div>
+                <div class="wrap_boxes">
+                  <img src="images/ui.svg" alt="" width="68px" height="68px" />
+                  <strong>uI/uX design</strong>
+                  <span>Mobile app, website design</span>
+                </div>
+                <div class="wrap_boxes">
+                  <img src="images/mic.svg" alt="" width="68px" height="68px" />
+                  <strong>sound design</strong>
+                  <span>sound design</span>
+                </div>
+                <div class="wrap_boxes">
+                  <img
+                    src="images/game.svg"
+                    alt=""
+                    width="68px"
+                    height="68px"
+                  />
+                  <strong>game design</strong>
+                  <span>Character Design, Props & Objects</span>
+                </div>
+                <div class="wrap_boxes">
+                  <img src="images/pho.png" alt="" width="68px" height="68px" />
+                  <strong>photography</strong>
+                  <span>portrait, product photography</span>
+                </div>
+                <div class="wrap_boxes">
+                  <strong class="wst">advertising</strong>
+                  <span class="sst"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vitae nulla diam in ac dictum a urna viverra morbi.
+                  </span>
+                  <a href="">ORDER NOW ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav_wrap">
+            <a href=""><img src="images/vector.png" alt="" /></a>
+            <div class="cont_bot">
+              <a href=""><img src="images/home.svg" alt="" /></a>
+              <a href=""><img src="images/code.svg" alt="" /></a>
+              <a href=""><img src="images/study.svg" alt="" /></a>
+              <a href=""><img src="images/portfolio.svg" alt="" /></a>
+              <a href=""><img src="images/blog.svg" alt="" /></a>
+              <a href=""><img src="images/contact.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="header_frame">
+          <div class="container">
+            <div class="child_container">
+              <div class="price_plans">
+                <strong>Price plans</strong>
+                <span
+                  >Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                  lorem ipsum</span
+                >
+                <div class="price_box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

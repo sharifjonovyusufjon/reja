@@ -1,0 +1,622 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgb(229, 229, 229);
+}
+
+.frame .container {
+  position: relative;
+  width: 1440px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(240, 240, 246);
+}
+
+.navbar_frame {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* NAVBAR TOP*/
+.nav_top {
+  position: relative;
+  width: 305px;
+  height: auto;
+  padding-top: 47px;
+  padding-bottom: 93px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+}
+
+.nav_top .container {
+  position: relative;
+  width: 228px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav_top .profil {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_top .profil strong {
+  margin-top: 26px;
+
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.nav_top .profil span {
+  margin-top: 6px;
+
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgb(118, 118, 118);
+}
+
+.nav_top .profil .medium {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 17px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav_top .medium .divs {
+  position: relative;
+  width: 30px;
+  height: 25px;
+
+  border-radius: 50%;
+  background: rgb(255, 180, 0);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_top .divs div {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* margin chiziq */
+.nav_top .margin {
+  width: 100%;
+  height: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  border: 1.5px solid rgb(240, 240, 246);
+}
+
+.navbar_frame .nav_top .conteiner .procase {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_frame .nav_top .conteiner .procase .probox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 9px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_frame .nav_top .conteiner .procase .probox strong {
+  padding: 3px;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+  background: rgb(255, 180, 0);
+}
+
+.navbar_frame .nav_top .conteiner .procase .probox span {
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.nav_top .lang {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_top .lang .str {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav_top .str strong {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.nav_top .lang .ftz {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_top .ftz .ftzbox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_top .ftzbox .ftztxt {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 6px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_top .ftztxt strong {
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgb(118, 118, 118);
+}
+
+.nav_top .ftzft {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border: 0.5px solid rgb(255, 180, 0);
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav_top .ftzft div {
+  position: relative;
+  width: 217px;
+  height: 2px;
+  border-radius: 30px;
+  background: rgb(255, 180, 0);
+}
+
+.nav_top .extra {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_top .extrabox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_top .extraboxes {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav_top .extraboxes span {
+  margin-left: 15px;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgb(118, 118, 118);
+}
+
+/* NAVBAR COUNT*/
+.nav_count {
+  position: relative;
+  width: 971px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  background: rgb(240, 240, 246);
+}
+
+.count_top {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  background: rgb(255, 255, 255);
+}
+
+.count_txt {
+  position: relative;
+  width: 499px;
+  height: auto;
+  margin-top: 99px;
+  margin-left: 56px;
+  margin-bottom: 61px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.count_txt strong {
+  margin-bottom: 17px;
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 123.6%;
+  color: rgb(43, 43, 43);
+}
+
+.count_txt span {
+  margin-bottom: 22px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgb(118, 118, 118);
+}
+
+.count_txt a {
+  position: relative;
+  width: 154px;
+  height: 51px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  background: rgb(255, 180, 0);
+}
+
+.count_txt .asp {
+  height: 4px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.count_txt img {
+  position: absolute;
+  margin-top: 16px;
+  margin-right: 61px;
+  margin-bottom: 8px;
+}
+
+.count_bot {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(240, 240, 246);
+}
+
+.count_bot strong {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.count_bot span {
+  width: 438px;
+  height: 68px;
+  margin-top: 25px;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.wrap_box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap_boxes {
+  position: relative;
+  width: 310px;
+  height: 225px;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+}
+
+.wrap_boxes img {
+  margin-top: 36px;
+}
+
+.wrap_boxes strong {
+  margin-top: 33px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.wrap_boxes span {
+  margin-top: 15px;
+  margin-bottom: 42px;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgb(118, 118, 118);
+}
+
+.wrap_boxes .wst {
+  margin-top: 33px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.wrap_boxes .sst {
+  margin-top: 21px;
+  width: 260px;
+  height: 78px;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgb(118, 118, 118);
+}
+
+.wrap_boxes a {
+  margin-top: 15px;
+  margin-bottom: 28px;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  color: rgb(255, 180, 0);
+}
+
+/* NAVBAR WRAP*/
+.nav_wrap {
+  position: relative;
+  width: 108px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav_wrap a {
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
+}
+
+.nav_wrap .cont_bot {
+  margin-top: 174px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont_bot a {
+  margin-top: 54px;
+}
+
+/* PRICE PLANS*/
+.header_frame {
+  position: relative;
+  width: 1440px;
+  height: auto;
+  background: rgb(240, 240, 246);
+}
+
+.header_frame .container {
+  position: relative;
+  width: 1030px;
+  height: 400px;
+  margin-left: 305px;
+  margin-right: 108px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.child_container {
+  position: relative;
+  width: 970px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.child_container .price_plans {
+  position: relative;
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.price_plans strong {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.price_plans span {
+  width: 438px;
+  height: 68px;
+  margin-top: 25px;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(118, 118, 118);
+}
+
+.price_plans .price_box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 51px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
