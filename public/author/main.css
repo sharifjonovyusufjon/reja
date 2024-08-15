@@ -581,6 +581,7 @@ p {
   position: relative;
   width: 100%;
   height: 100px;
+  margin-top: 100px;
 
   display: flex;
   flex-direction: column;
@@ -619,4 +620,52 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.price_boxes {
+  position: relative;
+  width: 310px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+.price_boxes strong {
+  margin-top: 54px;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.price_boxes .pdiv {
+  margin-top: 19px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pdiv strong {
+  margin-right: 10px;
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
+}
+
+.pdiv span {
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgb(43, 43, 43);
 }
