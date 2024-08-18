@@ -1,4 +1,4 @@
-console.log("Jasma maslahatlari!");
+/*console.log("Jasma maslahatlari!");
 
 list = [
   "20 yoshgacha",
@@ -7,7 +7,7 @@ list = [
   "40 va 50 yoshgacha",
   "50 va 60 yoshgacha",
   "60 yoshdan yuqori",
-];
+];*/
 
 /* function MaslahatBering(a, callback) {
   if (typeof a !== "number") callback("insert number", null);
@@ -35,7 +35,7 @@ MaslahatBering(60, (err, data) => {
 
 console.log("===== 1 ====="); */
 
-async function MaslahatBering(a) {
+/*async function MaslahatBering(a) {
   if (typeof a !== "number") throw new Error("insert number");
   else if (a <= 20) return list[0];
   else if (a >= 20 && a <= 30) return list[1];
@@ -49,9 +49,9 @@ async function MaslahatBering(a) {
       }, 1000);
     });
   }
-}
+}*/
 
-console.log("===== 0 =====");
+/*console.log("===== 0 =====");*/
 
 /* MaslahatBering(60)
   .then((data) => {
@@ -61,7 +61,7 @@ console.log("===== 0 =====");
     console.log("Err:", err);
   }); */
 
-async function run() {
+/*async function run() {
   let javob = await MaslahatBering(65);
   console.log("Javob:", javob);
   javob = await MaslahatBering(20);
@@ -70,4 +70,21 @@ async function run() {
   console.log("Javob:", javob);
 }
 run();
-console.log("===== 1 =====");
+console.log("===== 1 =====");*/
+
+// A-TASK
+
+function atask(e, soz) {
+  let count = 0;
+
+  for (let i = 0; i < soz.length; i++) {
+    if (soz[i] === e) {
+      console.log("before", count);
+      count++;
+    }
+  }
+  console.log("after", count);
+  return count;
+}
+
+console.log(atask("e", "engineer"));
