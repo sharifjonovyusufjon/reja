@@ -79,12 +79,12 @@ function atask(e, soz) {
 
   for (let i = 0; i < soz.length; i++) {
     if (soz[i] === e) {
-      console.log("before", count);
+      console.log("count", count);
       count++;
     }
   }
-  console.log("after", count);
+ // console.log("count", count);
   return count;
 }
 
-console.log(atask("e", "engineer"));
+console.log(atask("e", "nigerie"));
