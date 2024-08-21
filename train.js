@@ -74,7 +74,7 @@ console.log("===== 1 =====");*/
 
 // A-TASK
 
-function atask(e, soz) {
+/*function atask(e, soz) {
   let count = 0;
 
   for (let i = 0; i < soz.length; i++) {
@@ -87,4 +87,19 @@ function atask(e, soz) {
   return count;
 }
 
-console.log(atask("e", "nigerie"));
+console.log(atask("e", "nigerie"));*/
+
+// typeof a !== "number"
+function btask(soz) {
+  let count = 0;
+  const list = [];
+  for (let i = 0; i < soz.length; i++) {
+    list.push(soz[i]);
+  }
+  console.log(list);
+  list.filter((ele, index) => {
+    return typeof ele === "number" ? ele : null;
+  });
+}
+
+console.log(btask("e", "nigerie11"));

@@ -27,12 +27,30 @@ app.set("view engine", "ejs");
 
 // 4: Routing code
 app.get("/", function (req, res) {
-  res.render("reja");
+  console.log("user enter /");
+  db.collection("plans")
+    .find()
+    .toArray((err, data) => {
+      if (err) {
+        console.log("Err:", err);
+        res.end("Qandaydir xatolik kuzatildi!");
+      } else {
+        res.render("reja", { reja: data });
+      }
+    });
 });
 
-app.post("/json", (req, res) => {
-  console.log(req.body);
-  res.json({ Response: "success" });
+app.post("/reja", (req, res) => {
+  console.log("user enter /reja");
+  const new_reja = req.body.reja;
+  db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
+    if (err) {
+      console.log("Err:", err);
+      res.end("Xatolik kuzatildi!");
+    } else {
+      res.end("Mufaqqiyatli qo'shildi!");
+    }
+  });
 });
 
 // Author portfolio

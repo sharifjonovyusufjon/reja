@@ -4,19 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reja</title>
-    <link rel="stylesheet" href="harid.css" />
+    <link rel="stylesheet" href="reja.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <form class="form" action="/json" method="post">
-        <input
-          type="text"
-          class="int"
-          name="mahsulot"
-          placeholder="Mahsulot nomi..."
-        />
-        <button type="submit" class="btn">Mahsulot qo'shish</button>
-      </form>
+    <div class="frame">
+      <div class="container">
+        <div class="srplan">
+          <strong>Reja Va Maqsadlar</strong>
+        </div>
+        <form action="/reja" class="inplan" method="post">
+          <input
+            type="text"
+            placeholder="Reja va maqsad kiriting"
+            name="reja"
+          />
+          <button>Qo'shish</button>
+        </form>
+        <div class="btnplan">
+          <ul class="btnul">
+            <%reja.map(function(ele){%>
+            <li class="btnli">
+              <div class="litext"><%=ele.reja%></div>
+              <div class="btns">
+                <button class="edit" data_id="<%=ele._id%>">O'zgartirish</button
+                ><button class="delete" data_id="<%=ele._id%>">
+                  O'chirish
+                </button>
+              </div>
+            </li>
+            <%})%>
+          </ul>
+          <button class="all_delete">Hammasini o'chirish</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
