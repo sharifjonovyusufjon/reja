@@ -92,14 +92,15 @@ console.log(atask("e", "nigerie"));*/
 // typeof a !== "number"
 function btask(soz) {
   let count = 0;
-  const list = [];
+
   for (let i = 0; i < soz.length; i++) {
-    list.push(soz[i]);
+    if (!isNaN(soz[i])) {
+      console.log("count", count);
+      count++;
+    }
   }
-  console.log(list);
-  list.filter((ele, index) => {
-    return typeof ele === "number" ? ele : null;
-  });
+  // console.log("count", count);
+  return count;
 }
 
-console.log(btask("e", "nigerie11"));
+console.log(btask("333jfjjf2"));
