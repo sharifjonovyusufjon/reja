@@ -61,6 +61,25 @@ app.post("/reja-delete", (req, res) => {
   );
 });
 
+app.post("/reja-edit", (req, res) => {
+  const data = req.body;
+  db.collection("plans").findOneAndUpdate(
+    { _id: new mongodb.ObjectId(data.id) },
+    { $set: { reja: data.new_input } },
+    function (err, data) {
+      res.json({ state: "succsess" });
+    }
+  );
+});
+
+app.post("/reja-all-delete", (req, res) => {
+  if (req.body.all_delete) {
+    db.collection("plans").deleteMany(function () {
+      res.json({ state: "all delete succsess" });
+    });
+  }
+});
+
 // Author portfolio
 app.get("/author", (req, res) => {
   res.render("author", { user: user });

@@ -45,6 +45,36 @@ document.addEventListener("click", function (e) {
 
   /* Edit button*/
   if (e.target.classList.contains("edit")) {
-    alert("Siz rename qilmoqchimisiz?");
+    let rejaInput = prompt(
+      "O'zgartirishni kiriting!",
+      e.target.parentElement.parentElement.querySelector(".litext").innerHTML
+    );
+    if (rejaInput) {
+      axios
+        .post("/reja-edit", {
+          id: e.target.getAttribute("data_id"),
+          new_input: rejaInput,
+        })
+        .then((response) => {
+          e.target.parentElement.parentElement.querySelector(
+            ".litext"
+          ).innerHTML = rejaInput;
+        })
+        .catch((err) => {
+          console.log("xatolik");
+        });
+    }
   }
+});
+
+document.getElementById("delete_all").addEventListener("click", function () {
+  axios
+    .post("/reja-all-delete", { all_delete: true })
+    .then((response) => {
+      alert(response.data.state);
+      document.location.reload();
+    })
+    .catch((err) => {
+      console.log("xatolik");
+    });
 });

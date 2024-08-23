@@ -27,8 +27,8 @@
           />
           <button>Qo'shish</button>
         </form>
-        <div class="btnplan" id="ul">
-          <ul class="btnul">
+        <div class="btnplan">
+          <ul class="btnul" id="ul">
             <%reja.map(function(ele){%>
             <li class="btnli">
               <div class="litext"><%=ele.reja%></div>
@@ -41,7 +41,9 @@
             </li>
             <%})%>
           </ul>
-          <button class="all_delete">Hammasini o'chirish</button>
+          <button class="all_delete" id="delete_all">
+            Hammasini o'chirish
+          </button>
         </div>
       </div>
     </div>
