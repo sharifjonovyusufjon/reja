@@ -24,5 +24,27 @@ document.getElementById("form").addEventListener("submit", function (e) {
       new_reja.value = "";
       new_reja.focus();
     })
-    .catch((err) => {});
+    .catch((err) => {
+      console.log("xatolik");
+    });
+});
+/* Delete button */
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("delete")) {
+    if (confirm("Aniq o'chirmoqchimisiz?")) {
+      axios
+        .post("reja-delete", { id: e.target.getAttribute("data_id") })
+        .then((response) => {
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => {
+          console.log("Xatolik");
+        });
+    }
+  }
+
+  /* Edit button*/
+  if (e.target.classList.contains("edit")) {
+    alert("Siz rename qilmoqchimisiz?");
+  }
 });

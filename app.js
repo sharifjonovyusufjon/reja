@@ -4,6 +4,7 @@ const fs = require("fs");
 
 // MongoDB chaqirish
 const db = require("./server").db();
+const mongodb = require("mongodb");
 
 let user;
 fs.readFile("database/user.json", "utf8", (err, data) => {
@@ -47,6 +48,17 @@ app.post("/reja", (req, res) => {
     console.log(data.ops);
     res.json(data.ops[0]);
   });
+});
+
+app.post("/reja-delete", (req, res) => {
+  const id = req.body.id;
+  console.log(id);
+  db.collection("plans").deleteOne(
+    { _id: new mongodb.ObjectId(id) },
+    function (err, data) {
+      res.json({ state: "succsess" });
+    }
+  );
 });
 
 // Author portfolio
