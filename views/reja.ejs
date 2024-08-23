@@ -18,15 +18,16 @@
         <div class="srplan">
           <strong>Reja Va Maqsadlar</strong>
         </div>
-        <form action="/reja" class="inplan" method="post">
+        <form id="form" action="/reja" class="inplan" method="post">
           <input
+            id="new_reja"
             type="text"
             placeholder="Reja va maqsad kiriting"
             name="reja"
           />
           <button>Qo'shish</button>
         </form>
-        <div class="btnplan">
+        <div class="btnplan" id="ul">
           <ul class="btnul">
             <%reja.map(function(ele){%>
             <li class="btnli">
@@ -44,5 +45,7 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/browser.js"></script>
   </body>
 </html>

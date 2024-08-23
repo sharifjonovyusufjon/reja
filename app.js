@@ -44,12 +44,8 @@ app.post("/reja", (req, res) => {
   console.log("user enter /reja");
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
-    if (err) {
-      console.log("Err:", err);
-      res.end("Xatolik kuzatildi!");
-    } else {
-      res.end("Mufaqqiyatli qo'shildi!");
-    }
+    console.log(data.ops);
+    res.json(data.ops[0]);
   });
 });
 
