@@ -40,7 +40,7 @@ app.get("/", function (req, res) {
       }
     });
 });
-
+// new reja
 app.post("/reja", (req, res) => {
   console.log("user enter /reja");
   const new_reja = req.body.reja;
@@ -49,18 +49,19 @@ app.post("/reja", (req, res) => {
     res.json(data.ops[0]);
   });
 });
-
+// reja delet
 app.post("/reja-delete", (req, res) => {
   const id = req.body.id;
   console.log(id);
   db.collection("plans").deleteOne(
     { _id: new mongodb.ObjectId(id) },
     function (err, data) {
+      console.log("B databace javob yubora,iz");
       res.json({ state: "succsess" });
     }
   );
 });
-
+// reja edit
 app.post("/reja-edit", (req, res) => {
   const data = req.body;
   db.collection("plans").findOneAndUpdate(
@@ -71,12 +72,14 @@ app.post("/reja-edit", (req, res) => {
     }
   );
 });
-
+// delet all
 app.post("/reja-all-delete", (req, res) => {
   if (req.body.all_delete) {
     db.collection("plans").deleteMany(function () {
       res.json({ state: "all delete succsess" });
     });
+  } else {
+    res.json({ state: "false xatolik" });
   }
 });
 

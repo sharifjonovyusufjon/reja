@@ -1,6 +1,19 @@
+// D Task
+
+function dtask(text1, text2) {
+  alpha1 = text1.split("").sort().join("");
+  alpha2 = text2.split("").sort().join("");
+  if (alpha1 === alpha2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(dtask("mitgroup", "puorgtim"));
+
 //C-TASK
 
-const moment = require("moment");
+/*const moment = require("moment");
 const time = moment().format("HH:mm");
 
 console.log("Bizda non, lagmon, cola bor");
@@ -71,7 +84,7 @@ class Shop {
 const story = new Shop(23, 55, 7);
 console.log(story.qoldiq());
 console.log(story.qabul("lagmon", 10));
-console.log(story.qoldiq());
+console.log(story.qoldiq());*/
 
 /*console.log("Jasma maslahatlari!");
 

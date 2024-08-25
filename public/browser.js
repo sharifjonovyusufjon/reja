@@ -32,8 +32,10 @@ document.getElementById("form").addEventListener("submit", function (e) {
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("delete")) {
     if (confirm("Aniq o'chirmoqchimisiz?")) {
-      axios
-        .post("reja-delete", { id: e.target.getAttribute("data_id") })
+      console.log("A frontend backend sorov");
+      axios.post("/reja-delete", { id: e.target.getAttribute("data_id") });
+      console
+        .log(" C qabul qildik")
         .then((response) => {
           e.target.parentElement.parentElement.remove();
         })
@@ -75,6 +77,6 @@ document.getElementById("delete_all").addEventListener("click", function () {
       document.location.reload();
     })
     .catch((err) => {
-      console.log("xatolik");
+      console.log("maxsus xatolik");
     });
 });
