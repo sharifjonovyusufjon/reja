@@ -78,8 +78,6 @@ app.post("/reja-all-delete", (req, res) => {
     db.collection("plans").deleteMany(function () {
       res.json({ state: "all delete succsess" });
     });
-  } else {
-    res.json({ state: "false xatolik" });
   }
 });
 
