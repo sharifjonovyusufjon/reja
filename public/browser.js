@@ -33,9 +33,8 @@ document.addEventListener("click", function (e) {
   if (e.target.classList.contains("delete")) {
     if (confirm("Aniq o'chirmoqchimisiz?")) {
       console.log("A frontend backend sorov");
-      axios.post("/reja-delete", { id: e.target.getAttribute("data_id") });
-      console
-        .log(" C qabul qildik")
+      axios
+        .post("/reja-delete", { id: e.target.getAttribute("data_id") })
         .then((response) => {
           e.target.parentElement.parentElement.remove();
         })
