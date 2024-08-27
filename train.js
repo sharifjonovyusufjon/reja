@@ -1,6 +1,15 @@
+// E Task
+
+function getReverse(word) {
+  let uniword = word.split("").reverse().join("");
+  return uniword;
+}
+
+console.log(getReverse("hello"));
+
 // D Task
 
-function dtask(text1, text2) {
+/*function dtask(text1, text2) {
   alpha1 = text1.split("").sort().join("");
   alpha2 = text2.split("").sort().join("");
   if (alpha1 === alpha2) {
@@ -9,7 +18,7 @@ function dtask(text1, text2) {
     return false;
   }
 }
-console.log(dtask("mitgroup", "puorgtim"));
+console.log(dtask("mitgroup", "puorgtim"));*/
 
 //C-TASK
 
