@@ -72,8 +72,10 @@ document.getElementById("delete_all").addEventListener("click", function () {
   axios
     .post("/reja-all-delete", { all_delete: true })
     .then((response) => {
-      alert(response.data.state);
-      document.location.reload();
+      const btnli = document.querySelectorAll(".btnli");
+      btnli.forEach((li) => {
+        li.remove();
+      });
     })
     .catch((err) => {
       console.log("maxsus xatolik");
