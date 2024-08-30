@@ -1,11 +1,24 @@
+// FTask
+
+function findDoublers(text) {
+  const doubleArray = text.split("");
+  const doubleResult = doubleArray.some((double, index) => {
+    console.log(`${doubleArray.indexOf(double)} !== ${index}`);
+    return doubleArray.indexOf(double) !== index;
+  });
+  return doubleResult;
+}
+
+console.log(findDoublers("hello"));
+
 // E Task
 
-function getReverse(word) {
+/*function getReverse(word) {
   let uniword = word.split("").reverse().join("");
   return uniword;
 }
 
-console.log(getReverse("hello"));
+console.log(getReverse("hello"));*/
 
 // D Task
 
@@ -175,6 +188,7 @@ console.log("===== 1 =====");*/
   let count = 0;
 
   for (let i = 0; i < soz.length; i++) {
+    console.log(soz[i])
     if (soz[i] === e) {
       console.log("count", count);
       count++;
